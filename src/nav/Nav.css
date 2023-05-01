@@ -1,0 +1,86 @@
+nav {
+	width: 100%;
+	position: sticky;
+	z-index: 10;
+	top: 0;
+	padding: 1.2em 0;
+	color: var(--lightAccent);
+	background-color: transparent;
+	max-height: 3em;
+
+	border-bottom: 0px solid var(--lightGreyScale);
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav .right {
+
+	padding: 0;
+	margin: 0;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+}
+
+nav .left {
+	
+	padding: 0;
+	margin: 0;
+
+	margin-left: 2vw;
+	margin-right: 2vw;
+	padding-left: 2vw;
+	padding-right: 2vw;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+	align-items: center;
+}
+
+nav span {
+	font-size: 18px;
+
+	border: 2px solid transparent;
+	border-radius: 100px;
+	transition: border 0.2s ease;
+	transition-delay: 0.25s;
+
+	margin-left: 2vw;
+	margin-right: 2vw;
+	padding-left: 2vw;
+	padding-right: 2vw;
+
+	background-color: rgb(red, green, blue, 0);
+}
+
+nav span:hover {
+	cursor: pointer;
+	border-left: 2px solid var(--lightAccent);
+	border-right: 2px solid var(--lightAccent);
+}
+
+nav span:hover i {
+	color: gold;
+}
+
+nav span.activeClass i {
+	color: gold;
+}
+
+nav span.activeClass {
+	border-left: 2px solid var(--lightAccent);
+	border-right: 2px solid var(--lightAccent);
+}
+
+.logo {
+	font-size: calc(4vh);
+	font-family: "FasterOne-Regular";
+	color: var(--lightAccent);
+	padding: 0;
+	margin-bottom: 0.3vh;
+}

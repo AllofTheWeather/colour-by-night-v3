@@ -1,69 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap');
+
+/*
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+	--darkAccent: #ff5297;
+	--lightAccent: #ffa5c9;
+}
+*/
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+:root {
+	--darkAccent: #ff5297;
+	--lightAccent: #ffcadf;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+	--lightGreyScale: rgb(205, 205, 205);
+	--darkGreyScale: rgb(123, 123, 123);
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+@font-face {
+	font-family: 'Baloo Bhaina 2';
+	src: url('../src/fonts/Baloo_Bhaina_2/BalooBhaina2-VariableFont_wght.ttf');
 }
-a:hover {
-  color: #535bf2;
+
+@font-face {
+	font-family: "FasterOne-Regular";
+	src: url("../src/fonts/Faster_One/FasterOne-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Monofett";
+	src: url("../src/fonts/Monofett/Monofett-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Comfortaa";
+	src: url("../src/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf");
+}
+
+* {
+	box-sizing: border-box;
+}
+
+*,
+html {
+	line-height: 1em;
+	padding: 0;
+	margin: 0;
+	font-family:"Comfortaa";
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	font-family:'Times New Roman', Times, serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+	font-size: calc(15px + 12vmin);
+	font-family: "FasterOne-Regular";
+	color: var(--darkAccent);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+h3 {
+	font-size: 2.6em;
+	text-align: center;
+	padding: 1em;
+	font-weight: 500;
+	color: var(--lightAccent);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+Main {
+	margin: 10vmin;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.light {
+	color: var(--lightAccent)
+}
+
+#homeContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+input {
+
+	min-width: 150px;
+	width: 33vw;
+	max-width: 300px;
+	height: 50px;
+	border-radius: 100px;
+	background-color: var(--lightAccent);
+
+	font-family: "Comfortaa";
+	font-size: 3vmin;
+}
+
+input:hover {
+	cursor: pointer;
+	background-color: var(--darkAccent);
+	border-color: var(--lightAccent);
+}
+
+a {
+	text-decoration: none;
 }
